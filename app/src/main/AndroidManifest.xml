@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skcoder.ctzoneadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.notices.ShowImageActivity" android:parentActivityName=".ui.notices.DeleteNoticeActivity"></activity>
+        <activity
+            android:name=".ui.notices.DeleteNoticeActivity"
+            android:parentActivityName=".Dasboard" />
+        <activity
+            android:name=".ui.addteachers.UpdateTeacherActivity"
+            android:parentActivityName=".ui.addteachers.UpdateFaculty" />
+        <activity android:name=".UpdateInfoActivity" />
+        <activity
+            android:name=".ui.addteachers.UpdateFaculty"
+            android:parentActivityName=".Dasboard" />
+        <activity
+            android:name=".ui.addteachers.AddTeachers"
+            android:parentActivityName=".ui.addteachers.UpdateFaculty" />
+        <activity
+            android:name=".ui.addgallery.AddGallery"
+            android:parentActivityName=".Dasboard" />
+        <activity android:name=".ui.youtubelecture.YoutubeLecture"
+            android:parentActivityName=".Dasboard"/>
+        <activity android:name=".ui.notes.Notes"
+            android:parentActivityName=".Dasboard" />
+        <activity
+            android:name=".ui.ebooks.Ebooks"
+            android:parentActivityName=".Dasboard" />
+        <activity android:name=".ui.assignment.Assignment"
+            android:parentActivityName=".Dasboard" />
+        <activity
+            android:name=".ui.notices.notices"
+            android:parentActivityName=".ui.notices.DeleteNoticeActivity" />
+        <activity android:name=".Dasboard" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
